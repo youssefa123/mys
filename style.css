@@ -9,7 +9,7 @@
     }
 
 body {
-    background: #081b29;
+    background: whitesmoke;
 }
 
 .header {
@@ -18,5 +18,35 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: bisque
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: black;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #201d1d;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #11789b;
+  
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
 }
